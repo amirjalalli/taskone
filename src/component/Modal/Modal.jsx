@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import "./Modal.css";
 
-const Modal = ({ data }) => {
-  console.log(data);
-  return <div>modal</div>;
+const Modaledit = ({ id, title, body, closeModal }) => {
+  return (
+    <div className="modal">
+      <form className="modal-content">
+        <div className="input-container">
+          <p className="input">{title}</p>
+          <p className="input">{body}</p>
+        </div>
+        <div className="btn-container">
+          <button className="btn" onClick={() => closeModal()}>
+            save
+          </button>
+          <button className="btn" onClick={() => closeModal()}>
+            close
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 };
 
-export default Modal;
-
-// <div className="main-data" key={id}>
-// <h3 className="main-title">{title}</h3>
-// <p className="main-body">{body}</p>
-// <button
-//   type="button"
-//   className="btn"
-//   onClick={() => setShowModal(!showModal)}
-// >
-//   Eddit
-// </button>
-// </div>
+export default Modaledit;

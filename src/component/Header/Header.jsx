@@ -12,11 +12,9 @@ const Header = ({ value, searchHandler, setValue, data }) => {
     <header className="header-container">
       <div className="link-container">
         <Link to="/" className="link">
-          login
+          log out
         </Link>
-        <Link to="/" className="link">
-          home
-        </Link>
+
         {/* <Loigin /> */}
         {/* link router home and log out */}
       </div>

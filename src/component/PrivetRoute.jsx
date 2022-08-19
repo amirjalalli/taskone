@@ -9,8 +9,9 @@ const PrivetRoute = () => {
     username: "",
     password: "",
   });
-  console.log(setUser);
-
+  const setCurrentLoginfuc = (parm) => {
+    setCurrentLogin();
+  };
   return (
     <>
       {currentLogin ? (
@@ -20,7 +21,7 @@ const PrivetRoute = () => {
           user={user}
           setUser={setUser}
           currentLogin={currentLogin}
-          setCurrentLogin={setCurrentLogin}
+          setCurrentLoginfuc={setCurrentLoginfuc}
         />
       )}
     </>
