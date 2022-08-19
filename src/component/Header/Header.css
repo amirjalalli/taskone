@@ -1,0 +1,17 @@
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ccd;
+  height: 90px;
+}
+.post-count {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.link {
+  margin-left: 9px;
+  text-decoration: none;
+  color: blue;
+}
